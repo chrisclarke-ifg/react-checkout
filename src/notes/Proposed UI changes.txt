@@ -1,0 +1,37 @@
+Notes on proposed UI changes
+
+1. UI Toolkit - basic non styled ui elements as a library
+- Fitted to breakpoints by media queries
+=> Use Typescript and create a library of simple UI Elements like IFG bootstrap
+
+2. UI Theme - Site specific theme to make UI toolkit look like Surfdome, Blackleaf ...
+- Specific colours and layouts
+=> Use UI toolkit and create required templates and layouts with style
+
+3. Components - Small collections of UI elements that perform a behaviour
+- Poscode lookup
+- Search box
+- Delivery address
+- Billing address
+=> Specific implementations that will be used
+
+4. Behaviours - Well described pieces of bussiness logic parts of the sales funnel
+- Use checkout to Buy socks
+- Update delivery Address of order 
+=> These should be a match with the acceptance criteria and used to test both end to end and units
+
+5. Modules - Block of UI elements with some behaviour so that the site can transition funnel activities 
+- Checkout
+- Basket
+- PDP 
+- Search
+=> Full working pieces of implemented react code with connections to the existing Equillibrium for data to be replaced with services later
+
+6. Funnel - a collection of behaviours that produce a customers outcome 
+- From entry of customer to site to purchase of socks including payment
+=> These are ways the site and it's modules are used chains of behaviours and modules and could also be micro sites
+
+7. A Site - a collection of modules that have a theme and all required behaviours to be useful to the customer
+- Surfdome
+- Blackleaf
+=> Will become a recreation of the full sites with all functionality replaced and utilising all other layers
